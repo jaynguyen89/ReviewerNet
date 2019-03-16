@@ -1,0 +1,19 @@
+.auth {
+    margin-top: 25px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.header hr {
+    width: 35%;
+    border: 1px solid #ff8a65;
+}
+
+fieldset {
+    margin-top: 20px;
+    padding: 10px 7px;
+    min-width: 100%;
+}

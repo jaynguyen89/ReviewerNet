@@ -10,9 +10,14 @@
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+    <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous" />
+
     <!--The minimized Bootstrap and FontAwesome libraries to use globally-->
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/fontawecome.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/animate.min.css" />
     
     <!--Custom CSS styles that work globally in the whole project.
         For locally styling, refer to the local CSS in every component's folder-->
@@ -21,15 +26,94 @@
     <title>ReviewerNet - The reviewers community</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!--The navbar menu-->
+    <div class="topnav" id="myTopnav">
+        <div class="container">
+            <!--The logo-->
+            <a href="/" class="nav-logo" style="background-color:transparent !important;">
+                <img src="logo.png" alt="logo" class="img-responsive" />
+            </a>
+
+            <!--The menu with dropdown-->
+            <div class="right">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">About</a>
+                <div class="dropdown hidden">
+                    <button class="dropbtn">Hello, User!
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="fas fa-user-circle"></i> Profile</a>
+                        <a href="#"><i class="fas fa-users-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-user-slash"></i> Logout</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" id="navToggle" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+    </div>
+    <!--End navbar menu-->
+
+    <noscript>
+        <div style="width: 100%; text-align: center; margin-top: 150px;">
+            <h1>
+                <p style="color: orangered; font-size: 3em;">&#9888;</p>
+                Please enable Javascript in your browser to run this app.
+            </h1>
+        </div>
+    </noscript>
+
+    <div class="container">
+        <div id="root"></div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-text">
+                        <p>All Rights Reserved | Developped by <strong><a target="_blank" href="https://sites.google.com/view/jaydeveloper/">Jay Nguyen</a></strong>.
+                            Click here for <strong><a href="#">Privacy Policy</a></strong></p>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-6">
+                    <div class="footer-menu pull-right">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <div class="row"><a id="scrollTop"><i class="fas fa-arrow-alt-circle-up fa-2x center"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-microsoft"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!--All Javascript that are required globally in the whole project-->
     <script src="%PUBLIC_URL%/assets/js/jquery-3.3.1.min.js"></script>
     <script src="%PUBLIC_URL%/assets/js/bootstrap.min.js"></script>
     <script src="%PUBLIC_URL%/assets/js/popper.min.js"></script>
     <script src="%PUBLIC_URL%/assets/js/tooltip.min.js"></script>
-    <script src="%PUBLIC_URL%/assets/js/fontawesome.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/jquery.sticky.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/smoothScroll.min.js"></script>
+
     <!--For locally controlling, refer to the local JS in every component's folder-->
     <script src="%PUBLIC_URL%/assets/js/global.js"></script>
   </body>
