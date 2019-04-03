@@ -17,3 +17,8 @@ fieldset {
     padding: 10px 7px;
     min-width: 100%;
 }
+
+.auth-form {
+    width: 60%;
+    margin: 0 auto;
+}

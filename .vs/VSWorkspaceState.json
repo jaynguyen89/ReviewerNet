@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\public",
+    "\\public\\assets",
+    "\\public\\assets\\css",
     "\\src",
     "\\src\\Authentication"
   ],
-  "SelectedNode": "\\src\\Authentication\\Authentication.js",
+  "SelectedNode": "\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }
